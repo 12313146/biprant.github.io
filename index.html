@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Biprant Kasyap Barman - Cybersecurity Student Portfolio. Skills, Projects, Certifications and Contact." />
+  <title>Biprant Kasyap Barman | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Noise overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-brackets">&lt;</span>BKB<span class="logo-brackets">/&gt;</span>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-halved"></i>
+        <span>Cybersecurity Student</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line">Biprant Kasyap</span>
+        <span class="name-line highlight-name">Barman</span>
+      </h1>
+      <p class="hero-tagline">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-summary">
+        Passionate about securing digital landscapes. Exploring vulnerabilities, building secure applications, and
+        competing in Capture The Flag challenges.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+        <a href="/resume.pdf" class="btn btn-outline" target="_blank">
+          <i class="fas fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/12313146" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/biprant-kasyap-barman/" target="_blank" class="social-icon"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-container">
+        <div class="photo-ring ring-1"></div>
+        <div class="photo-ring ring-2"></div>
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <i class="fas fa-user-secret"></i>
+          </div>
+        </div>
+        <div class="orbit-icon oi-1"><i class="fas fa-shield"></i></div>
+        <div class="orbit-icon oi-2"><i class="fas fa-terminal"></i></div>
+        <div class="orbit-icon oi-3"><i class="fas fa-bug"></i></div>
+        <div class="orbit-icon oi-4"><i class="fas fa-lock"></i></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hey! I'm <strong>Biprant Kasyap Barman</strong>, a dedicated cybersecurity student with a passion for
+            understanding systems at their deepest level. From reversing binaries to analyzing network traffic, I thrive
+            in the world of offensive and defensive security.
+          </p>
+          <p>
+            I'm actively building my skills through hands-on projects, Capture The Flag (CTF) competitions, and
+            self-directed research. My goal is to contribute to a safer digital world by developing robust, secure
+            solutions.
+          </p>
+          <p>
+            Beyond security, I enjoy fullstack development to build the tools I need, and I constantly seek new
+            challenges to sharpen my problem-solving skills.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="fas fa-flag"></i>
+              <span>2 CTFs Completed</span>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-code-branch"></i>
+              <span>3 Projects Built</span>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-certificate"></i>
+              <span>NPTEL Certified</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info-cards">
+          <div class="info-card">
+            <span class="info-label"><i class="fas fa-graduation-cap"></i> Education</span>
+            <span class="info-value">B.Tech in CSE (Cybersecurity) from Lovely Professional University</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label"><i class="fas fa-map-pin"></i> Location</span>
+            <span class="info-value">India</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label"><i class="fas fa-crosshairs"></i> Focus</span>
+            <span class="info-value">Networking, Digital forensics, Cybersecurity & Ethical Hacking</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label"><i class="fas fa-language"></i> Languages</span>
+            <span class="info-value">English, Hindi, Assamese</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// skills_and_tech</span>
+        <h2 class="section-title">Skills & <span class="text-accent">Technologies</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-code"></i> Programming</h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                alt="C" />C</div>
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++" />C++</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java" />Java</div>
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python" />Python</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-globe"></i> Web Development</h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />HTML
+            </div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS" />CSS</div>
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JS" />JavaScript</div>
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js" />Next.js</div>
+            <div class="skill-pill"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />Django
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-shield-halved"></i> Security Tools</h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-linux"></i> Linux</div>
+            <div class="skill-pill"><i class="fas fa-network-wired"></i> Nmap</div>
+            <div class="skill-pill"><i class="fas fa-wave-square"></i> Wireshark</div>
+            <div class="skill-pill"><i class="fas fa-bug"></i> Metasploit</div>
+            <div class="skill-pill"><i class="fas fa-terminal"></i> Burp Suite</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// my_projects</span>
+        <h2 class="section-title">Featured <span class="text-accent">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Expense Tracker -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-wallet"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/12313146/Expense_tracker" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-desc">A full-featured personal finance tracking application to manage and visualize your
+            daily expenses and income with clean analytics.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Web</span><span>Finance</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Maze Generator -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-label="Maze icon">
+                <!-- Outer border -->
+                <rect x="2" y="2" width="20" height="20" rx="2" />
+                <!-- Maze walls -->
+                <polyline points="2,8 10,8 10,4" />
+                <polyline points="14,4 14,12 6,12 6,20" />
+                <polyline points="10,16 22,16" />
+                <polyline points="18,8 22,8" />
+                <line x1="18" y1="12" x2="18" y2="20" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/12313146/Maze-Generator" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Maze Generator</h3>
+          <p class="project-desc">An interactive maze generator using algorithmic approaches (DFS/recursive
+            backtracking) to procedurally create and solve mazes in real-time.</p>
+          <div class="project-tags">
+            <span>Algorithm</span><span>Visualization</span><span>Python</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Job Portal -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/12313146" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Job Portal</h3>
+          <p class="project-desc">A comprehensive job portal web application enabling employers to post jobs and
+            applicants to search and apply — with authentication and dashboards.</p>
+          <div class="project-tags">
+            <span>Django</span><span>Web App</span><span>Fullstack</span>
+          </div>
+        </div>
+
+      </div>
+      <p class="experience-note"><i class="fas fa-pen-to-square"></i> More projects coming soon — actively building my
+        portfolio and upskilling myself in the process.</p>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certs-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// certifications</span>
+        <h2 class="section-title">Certifications & <span class="text-accent">Courses</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card featured-cert">
+          <div class="cert-logo">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">NPTEL — IIT</span>
+            <a href="Cloud Computing.pdf" target="_blank">
+              <h3 class="cert-name">Cloud Computing</h3>
+            </a>
+            <p class="cert-desc">Completed an in-depth course on cloud computing fundamentals, service models,
+              deployment strategies, and cloud security principles.</p>
+            <div class="cert-meta">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card featured-cert">
+          <div class="cert-logo cert-logo-img">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="32" height="32" fill="currentColor"
+              aria-label="OpenAI logo">
+              <path
+                d="M297.1 168.7a80.5 80.5 0 0 0-6.9-66.1 81.5 81.5 0 0 0-87.6-39.2 80.5 80.5 0 0 0-60.7-27.1 81.5 81.5 0 0 0-77.7 56.5 80.5 80.5 0 0 0-53.8 39 81.5 81.5 0 0 0 10 95.6 80.5 80.5 0 0 0 6.9 66.1 81.5 81.5 0 0 0 87.6 39.2 80.5 80.5 0 0 0 60.7 27.1 81.5 81.5 0 0 0 77.7-56.6 80.5 80.5 0 0 0 53.8-39 81.5 81.5 0 0 0-10-95.5zm-120.2 168.6a60.4 60.4 0 0 1-38.8-14c.5-.3 1.3-.7 1.9-1.1l64.4-37.2a10.5 10.5 0 0 0 5.3-9.1V183l27.2 15.7a1 1 0 0 1 .5.7v75.2a60.7 60.7 0 0 1-60.5 63.7zm-130.1-55.6a60.4 60.4 0 0 1-7.2-40.6c.5.3 1.2.7 1.8 1l64.4 37.2a10.5 10.5 0 0 0 10.5 0l78.6-45.4v31.4a1 1 0 0 1-.4.8l-65.1 37.6a60.7 60.7 0 0 1-82.6-22zm-16.9-140.2A60.4 60.4 0 0 1 61.5 113l.2.1v74.3a10.5 10.5 0 0 0 5.3 9.1l78.6 45.4-27.2 15.7a1 1 0 0 1-.9.1L51.9 219a60.7 60.7 0 0 1-22-78.5zm223.1 52.1-78.6-45.4 27.2-15.7a1 1 0 0 1 .9-.1l65.6 37.8a60.6 60.6 0 0 1-9.4 109.1v-74.6a10.5 10.5 0 0 0-5.7-9.1zm27.1-40.8c-.5-.3-1.2-.7-1.8-1l-64.4-37.2a10.5 10.5 0 0 0-10.5 0l-78.7 45.4v-31.4a1 1 0 0 1 .4-.8l65.1-37.6a60.7 60.7 0 0 1 90.4 62.6zm-170.5 56.1-27.2-15.7a1 1 0 0 1-.5-.7v-75.2a60.7 60.7 0 0 1 99.5-46.6c-.5.3-1.3.7-1.9 1.1l-64.4 37.2a10.5 10.5 0 0 0-5.3 9.1zm14.8-31.9 35-20.2 35 20.2v40.3l-35 20.2-35-20.2z" />
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Infosys springboard</span>
+            <a href="chat.pdf" target="_blank">
+              <h3 class="cert-name">ChatGPT-4 Prompt Engineering</h3>
+            </a>
+            <p class="cert-desc">Completed certification in ChatGPT-4 Prompt Engineering, gaining expertise in designing
+              effective prompts, optimizing AI responses, and leveraging large language models for practical
+              applications.</p>
+            <div class="cert-meta">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card placeholder-cert">
+          <div class="cert-logo">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Coming Soon</span>
+            <h3 class="cert-name">More Certifications</h3>
+            <p class="cert-desc">Currently pursuing additional certifications in cybersecurity and related domains. Stay
+              tuned for updates!</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="experience-note"><i class="fas fa-pen-to-square"></i> More Certifications on the way.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// experience</span>
+        <h2 class="section-title">Training & <span class="text-accent">Experience</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="java.pdf" target="_blank">
+                <h3 class="tl-role">Summer Training Placement Ace: Java Bootcamp</h3>
+              </a>
+              <span class="tl-company">[Lovely Professional University]</span>
+            </div>
+            <span class="tl-period"><i class="fas fa-calendar"></i> [June 2025] – [July 2025]</span>
+            <ul class="tl-bullets">
+              <li>Completed 50 hours of intensive training in Java programming, covering core concepts, OOP principles,
+                and advanced features.</li>
+              <li>Developed hands-on mini projects including the Maze-Generator project to solidify Java skills.</li>
+              <li>Gained practical experience with LeetCode and CodeForces.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Java</span><span>OOP</span><span>Data Structures</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="experience-note"><i class="fas fa-pen-to-square"></i> More experience coming soon — actively building my
+        professional profile.</p>
+    </div>
+  </section>
+
+  <!-- Achievements / CTFs Section -->
+  <section id="achievements" class="section achievements-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// achievements</span>
+        <h2 class="section-title">CTF & <span class="text-accent">Achievements</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card ctf-card">
+          <div class="ach-icon"><i class="fas fa-flag"></i></div>
+          <div class="ach-content">
+            <h3 class="ach-title">Infobahn CTF</h3>
+            <p class="ach-desc">Participated in Infobahn CTF competition, solving challenges across web
+              exploitation, cryptography, and forensics categories getting 53rd position among 1000+ teams.</p>
+            <div class="ach-tags">
+              <span><i class="fas fa-trophy"></i> CTF</span>
+              <span><i class="fas fa-spider"></i> Web Exploitation</span>
+              <span><i class="fas fa-key"></i> Cryptography</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement-card ctf-card">
+          <div class="ach-icon"><i class="fas fa-flag"></i></div>
+          <div class="ach-content">
+            <a href="ApoorvCTF26.pdf" target="_blank">
+              <h3 class="ach-title">ApoorvCTF</h3>
+            </a>
+            <p class="ach-desc">Competed in Apoorv CTF event, tackling reverse engineering, cryptography and binary
+              exploitation
+              challenges to strengthen offensive security skills.</p>
+            <div class="ach-tags">
+              <span><i class="fas fa-trophy"></i> CTF</span>
+              <span><i class="fas fa-microchip"></i> Reverse Engineering</span>
+              <span><i class="fas fa-bomb"></i> Binary Exploitation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="experience-note"><i class="fas fa-pen-to-square"></i> Looking to make more progress with CTFs and
+        upskilling myself in the process.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// contact_me</span>
+        <h2 class="section-title">Get In <span class="text-accent">Touch</span></h2>
+        <div class="section-divider"></div>
+        <p class="contact-subtitle">Have a question, collaboration idea, or just want to say hello? Drop me a message!
+        </p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:biprant25@gmail.com" class="contact-value">biprant25@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/12313146" target="_blank" class="contact-value">github.com/12313146</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/biprant-kasyap-barman/" target="_blank"
+                class="contact-value">linkedin.com/in/biprant-kasyap-barman/</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="sender-name">Your Name</label>
+            <input type="text" id="sender-name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="sender-email">Your Email</label>
+            <input type="email" id="sender-email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hey Biprant, I wanted to reach out about..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="send-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-brackets">&lt;</span>BKB<span class="logo-brackets">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed & Built by <strong>Biprant Kasyap Barman</strong> &copy; <span id="year"></span>
+      </p>
+      <div class="footer-links">
+        <a href="resume.pdf" target="_blank" download class="footer-cv-btn">
+          <i class="fas fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
